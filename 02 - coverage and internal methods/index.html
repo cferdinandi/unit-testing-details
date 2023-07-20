@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Scuttlebutt</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			body {
+				margin: 1em auto;
+				max-width: 40em;
+				width: 88%;
+			}
+
+			.msg {
+				background-color: #f7f7f7;
+				border: 1px solid #e5e5e5;
+				margin-bottom: 1em;
+				padding: 0.6875em 1em;
+			}
+
+			.msg-date {
+				margin-bottom: 0.25em;
+			}
+
+			.msg-date a {
+				text-decoration: none;
+			}
+
+			.msg-date a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Scuttlebutt</h1>
+
+		<div id="app">Loading...</div>
+
+
+		<script type="module">
+			import {getData} from './api.js';
+
+			// Get messages from the API
+			getData();
+		</script>
+	</body>
+</html>
