@@ -44,7 +44,7 @@ describe('The api() method', function () {
 
 	test('the scuttlebutt API was called', async function () {
 		await getData();
-		expect(window.fetch).toHaveBeenCalledWith('https://vanillajsguides.com/api/scuttlebutt.json');
+		expect(window.fetch).toHaveBeenCalledWith('https://leanwebclub.com/course-apis/scuttlebutt.json');
 	});
 
 	test('content is displayed in the UI', async function () {

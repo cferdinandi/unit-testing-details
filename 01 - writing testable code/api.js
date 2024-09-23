@@ -34,7 +34,7 @@ function getData () {
 	// Get the #app element
 	let app = document.querySelector('#app');
 
-	fetch('https://vanillajsguides.com/api/scuttlebutt.json').then(function (response) {
+	fetch('https://leanwebclub.com/course-apis/scuttlebutt.json').then(function (response) {
 		if (response.ok) {
 			return response.json();
 		}
